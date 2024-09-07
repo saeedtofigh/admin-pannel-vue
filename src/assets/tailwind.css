@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+li{
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: vazir;
+    src: url(../components/fonts/Vazir.ttf) format("truetype");
+}
+*{
+    font-family: vazir;
+    direction: rtl;
+}
+body{
+    background-color:rgb(235, 235, 235);
+
+}
