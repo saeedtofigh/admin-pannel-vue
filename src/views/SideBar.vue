@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[18rem] m-4 rounded-t-2xl bg-gray-200 h-auto shadow-md">
+  <div class="w-[18rem] m-4 rounded-t-2xl bg-gray-200 h-auto shadow-md mt-[8rem]">
     <div class="profile text-center mt-6">
       <span class="material-icons rounded-full bg-violet-300 text-white text-9xl">
         person
@@ -7,7 +7,6 @@
       <p>سارا غندوی</p>
     </div>
     
-    <!-- ارسال activeId و متد برای تغییر آن -->
     <ListItem 
       v-for="item in listItem" 
       :key="item.id" 
@@ -16,7 +15,7 @@
       @setActive="setActiveId"
     />
     
-    <div class="options"></div>
+
   </div>
 </template>
 
@@ -24,7 +23,7 @@
 import ListItem from "@/components/ListItem.vue";
 
 export default {
-  components: { ListItem },
+  components: { ListItem  },
   data() {
     return {
       listItem: [

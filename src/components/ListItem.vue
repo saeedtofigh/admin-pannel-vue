@@ -1,7 +1,7 @@
 <template>
   <ul class="list-item my-4">
     <li
-      class="flex text-center justify-center py-4 px-۳"
+      class="flex text-center justify-center py-4 px-2"
       :class="{ active: isActive }" 
       @click="setActiveItem"
     >
