@@ -1,6 +1,9 @@
 <!-- FormComponent.vue -->
 <template>
-  <form @submit.prevent="handleSubmit" class="bg-white mx-3 p-5  rounded-3xl my-2 w-full lg:w-1/2">
+  <form
+    @submit.prevent="handleSubmit"
+    class="bg-white p-5 mx-auto rounded-3xl my-2 w-full lg:w-1/2 md:mx-1"
+  >
     <p class="text-2xl font-bold">لطفا اطلاعات کاربر را وارد نمایید</p>
     <div class="flex flex-col">
       <div class="flex-col md:flex-row flex my-2">
@@ -43,8 +46,6 @@
         >
           ذخیره و ماندن
         </button>
-      </div>
-      <div class="text-center flex flex-col md:flex-row w-full justify-center">
         <button
           class="bg-red-500 text-green-950 p-1 md:w-1/2 my-2 rounded-lg mx-1 shadow-md"
         >

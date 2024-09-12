@@ -1,6 +1,6 @@
 <!-- InputField.vue -->
 <template>
-    <div class="flex-col flex mx-2 w-full">
+    <div class="flex-col flex mx-auto md:mx-1 w-full">
       <label class="m-1">{{ label }}</label>
       <input
         :type="type"

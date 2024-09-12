@@ -1,21 +1,24 @@
 <template>
-  <div class="w-[18rem] m-4 rounded-t-2xl bg-gray-200 h-auto shadow-md mt-[8rem]">
+  <div
+    name="slide-sidebar"
+    class="w-[18rem] m-4 rounded-t-2xl absolute lg:relative bg-gray-200 h-screen overflow-auto shadow-md mt-[8rem]"
+  >
     <div class="profile text-center mt-6">
-      <span class="material-icons rounded-full bg-violet-300 text-white text-9xl">
+      <span
+        class="material-icons rounded-full bg-violet-300 text-white text-9xl"
+      >
         person
       </span>
       <p>سارا غندوی</p>
     </div>
-    
-    <ListItem 
-      v-for="item in listItem" 
-      :key="item.id" 
-      :item="item" 
+
+    <ListItem
+      v-for="item in listItem"
+      :key="item.id"
+      :item="item"
       :isActive="activeId === item.id"
       @setActive="setActiveId"
     />
-    
-
   </div>
 </template>
 
@@ -23,7 +26,7 @@
 import ListItem from "@/components/ListItem.vue";
 
 export default {
-  components: { ListItem  },
+  components: { ListItem },
   data() {
     return {
       listItem: [
@@ -44,6 +47,10 @@ export default {
       activeId: null, // آیتم فعال
     };
   },
+  mounted() {
+    // تنظیم آیتم اول به عنوان پیش‌فرض
+    this.activeId = this.listItem[0].id;
+  },
   methods: {
     setActiveId(id) {
       this.activeId = id; // تغییر آیتم فعال
@@ -51,3 +58,5 @@ export default {
   },
 };
 </script>
+
+<style></style>

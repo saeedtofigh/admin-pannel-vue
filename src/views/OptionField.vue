@@ -1,8 +1,8 @@
 <template>
-  <div class="flex-col flex mx-2 w-full my-2">
+  <div class="flex-col flex w-full my-2 mx-auto md:mx-1">
     <select
       v-model="selected"
-      class="border-2 border-primary p-1 rounded-lg w-full text-primary"
+      class="border-2 border-primary p-1 rounded-lg w-full text-primary bg-transparent"
     >
       <option v-for="option in options" :key="option" :value="option">
         {{ option }}

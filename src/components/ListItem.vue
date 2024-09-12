@@ -15,6 +15,11 @@
 
 <script>
 export default {
+   data(){
+    return{
+      active:true
+    }
+   },
   props: {
     item: {
       type: Object,
