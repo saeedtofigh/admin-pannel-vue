@@ -1,17 +1,30 @@
 <template>
-  <div class="flex-col flex mx-2 w-full">
+  <div class="flex-col flex mx-2 w-full my-2">
     <select
-      v-model="role"
-      class="border-2 border-gray-400 p-1 rounded-lg w-full flex-col md:flex-row flex my-2"
+      v-model="selected"
+      class="border-2 border-primary p-1 rounded-lg w-full text-primary"
     >
-      <option value="developer">web developer</option>
-      <option value="designer">web designer</option>
+      <option v-for="option in options" :key="option" :value="option">
+        {{ option }}
+      </option>
     </select>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    options: {
+      type: Array,
+      Required: true,
+    },
+  },
+  data() {
+    return {
+      selected: this.options[0],
+    };
+  },
+};
 </script>
 
 <style></style>

@@ -2,7 +2,7 @@
   <div class="w-full flex flex-col xl:flex-row">
     <SideBar />
     <!-- <Content/> -->
-    <div class="flex bg-gray-200 p-8  w-full lg:w-4/5  rounded-3xl mt-[8rem]">
+    <div class="flex bg-gray-200 p-8  w-full xl:w-4/5  rounded-3xl mt-[8rem]">
       <div class="flex flex-col md:flex-row w-full justify-center">
         <FormComponent />
         <OptionsForm />
