@@ -19,8 +19,8 @@
         <InputField label="رمز عبور" v-model="password" />
       </div>
       <div class="flex-col md:flex-row flex my-2">
-        <InputField label="شروع فعالیت" type="date" v-model="startdate" />
-        <InputField label="پایان فعالیت" type="date" v-model="enddate" />
+        <InputField label="شروع فعالیت" type="date"  v-model="startdate" />
+        <InputField label="پایان فعالیت" type="date"  v-model="enddate" />
       </div>
       <div class="flex-col md:flex-row flex my-2">
         <InputField label="تلفن همراه" type="number" v-model="phonenumber" />
@@ -37,23 +37,23 @@
         <button
           data-ripple-light="true"
           type="button"
-          class="bg-violet-300 focus:bg-violet-200 active:bg-violet-200 hover:bg-violet-200 text-green-950 p-1 md:w-1/2 my-2 rounded-lg mx-1 shadow-md border border-transparent text-sm transition-all active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none hover:shadow-lg focus:shadow-none"
+          class="bg-violet-300  active:bg-violet-200 hover:bg-violet-200 text-green-950 p-1 md:w-1/2 my-2 rounded-lg mx-1 shadow-md border border-transparent text-sm transition-all  disabled:opacity-50  hover:shadow-lg "
         >
           بازگشت
         </button>
         <button
-          class="bg-violet-300 text-green-950 p-1 md:w-1/2 my-2 rounded-lg mx-1 shadow-md"
+          class="bg-violet-300 text-green-950 p-1 md:w-1/2 my-2 rounded-lg mx-1 shadow-md active:shadow-xl transform hover:bg-violet-200 hover:shadow-lg active:bg-violet-200"
         >
           ذخیره و ماندن
         </button>
         <button
-          class="bg-red-500 text-green-950 p-1 md:w-1/2 my-2 rounded-lg mx-1 shadow-md"
+          class="bg-red-500 text-green-950 p-1 md:w-1/2 my-2 rounded-lg mx-1 shadow-md active:shadow-xl transform hover:bg-red-400 hover:shadow-lg active:bg-red-400"
         >
           پاک کردن
         </button>
         <button
           @click="handleSubmit"
-          class="bg-green-500 text-green-950 p-1 md:w-1/2 my-2 rounded-lg mx-1 shadow-md"
+          class="bg-green-500 text-green-950 p-1 md:w-1/2 my-2 rounded-lg mx-1 shadow-md active:shadow-xl transform hover:bg-green-400 hover:shadow-lg active:bg-green-400"
         >
           تایید کردن
         </button>

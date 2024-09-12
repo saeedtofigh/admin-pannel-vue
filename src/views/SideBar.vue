@@ -1,7 +1,7 @@
 <template>
   <div
     name="slide-sidebar"
-    class="w-[18rem] m-4 rounded-t-2xl absolute lg:relative bg-gray-200 h-screen overflow-auto shadow-md mt-[8rem]"
+    class="w-[18rem] m-4 rounded-t-2xl absolute lg:relative bg-gray-200 h-screen overflow-auto shadow-md mt-[7rem] lg:mt-[8rem]"
   >
     <div class="profile text-center mt-6">
       <span
@@ -10,7 +10,9 @@
         person
       </span>
       <p>سارا غندوی</p>
+      
     </div>
+    <hr class="w-64 h-1 my-8 bg-gray-300 border rounded">
 
     <ListItem
       v-for="item in listItem"

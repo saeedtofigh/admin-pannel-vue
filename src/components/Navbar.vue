@@ -1,12 +1,12 @@
 <template>
-  <nav class="bg-white flex justify-between m-3 h-20 rounded-3xl w-full fixed">
+  <nav class="bg-white flex justify-between  h-20 rounded-3xl w-full fixed my-2 ">
     <div class="flex text-center justify-center my-auto mr-8">
       <button  @click="$emit('toggle-sidebar')" class="xl:hidden">
         <span class="material-icons my-auto cursor-pointer hover:text-gray-500">menu</span>
       </button>
       <h1 class="text-gray-700 m-7">سامانه جامع و یکپارچه فام</h1>
     </div>
-    <p class="text-black m-7">پشتیبانی : ۰۲۱-۶۶۰۹۱۸۳۰</p>
+    <p class="text-black m-7 hidden sm:inline">پشتیبانی : ۰۲۱-۶۶۰۹۱۸۳۰</p>
   </nav>
 </template>
 
